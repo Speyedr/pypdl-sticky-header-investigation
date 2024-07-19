@@ -62,7 +62,7 @@ class Multidown(Basicdown):
 
         if self.curr < size:
             start = start + self.curr
-            kwargs.setdefault("headers", {}).update({"range": f"bytes={start}-{end}"})
+            kwargs.setdefault("headers", {}).update({"range": f"bytes={start}-{end}"})  # this is probably causing issues?
             await self.download(url, segment_path, "ab", session, **kwargs)
 
         if self.curr == size:
