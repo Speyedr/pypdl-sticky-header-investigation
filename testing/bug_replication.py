@@ -10,7 +10,10 @@ accessible and is still searching for another server to test this against.
 from pypdl import Pypdl
 
 download_list = [
-    ""              # URLs go here?
+    "https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg",
+    "https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg",
+    "https://safebooru.org//samples/4619/sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg",
+    "https://safebooru.org//samples/4619/sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg"
 ]
 
 # custom user agent to bypass dumb "anti-bot" blocks. apparently the use of a custom user agent was how the bug
