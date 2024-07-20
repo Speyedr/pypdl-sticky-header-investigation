@@ -1,31 +1,64 @@
-(Pypdl)  19-07-24 16:07:59 - DEBUG: Reseted download manager
-(Pypdl)  19-07-24 16:07:59 - DEBUG: Downloading, url: https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg attempt: 1
-(Pypdl)  19-07-24 16:07:59 - DEBUG: Obtaining header from https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Ending HEAD request for https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: HEAD Response: 200
-HEAD Response headers: <CIMultiDictProxy('Date': 'Fri, 19 Jul 2024 06:08:00 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '938120', 'Connection': 'keep-alive', 'Last-Modified': 'Thu, 18 Jul 2024 22:00:45 GMT', 'Etag': '"6699908d-e5088"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '183', 'Accept-Ranges': 'bytes', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=h%2F3QADyeTCi1dVNhs0%2F4TPhhT5NZKhlVllvXaB5zCNTkI%2BLRLLQKGVxxuQdpEC%2FnSYwgg0J6abigspb1oNuFI6pYejsQ1MHM5v09NFwA7SCJRJ1hv%2By1alLwx6DmfyjP"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a5888d11e8c8658-PER', 'alt-svc': 'h3=":443"; ma=86400')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Header accquired from head request
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Size accquired from header
-(Pypdl)  19-07-24 16:08:00 - DEBUG: ETag accquired from header
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Segment table created: {'url': 'https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg', 'segments': 2, 'overwrite': True, 0: {'start': 0, 'end': 469059, 'segment_size': 469060, 'segment_path': '3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg.0'}, 1: {'start': 469060, 'end': 938119, 'segment_size': 469060, 'segment_path': '3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg.1'}}
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Initiated waiting loop
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Multi-Segment download started
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Downloaded all segments
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Combining files
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Exit waiting loop, download completed
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Reseted download manager
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Downloading, url: https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg attempt: 1
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Obtaining header from https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Ending HEAD request for https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'range': 'bytes=469060-938119')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'range': 'bytes=469060-938119', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: HEAD Response: 206
-HEAD Response headers: <CIMultiDictProxy('Date': 'Fri, 19 Jul 2024 06:08:00 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '57023', 'Connection': 'keep-alive', 'Last-Modified': 'Fri, 19 Jul 2024 05:00:30 GMT', 'Etag': '"6699f2ee-80703"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '138', 'Content-Range': 'bytes 469060-526082/526083', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Ni4tWaMsTBUqToLDJdszhPDFANRd%2F907Pm50FRjsaH%2BqxDyKcbQuCWgQekoNzgAsCGx7h04VgBC9jR48WMt%2B0V9lT9lNM1jwYCapWOc04%2BDyFHTmk4rY4bBdP%2FxTKWvy"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a5888d5afe68643-PER', 'alt-svc': 'h3=":443"; ma=86400')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Ending GET request for https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'range': 'bytes=469060-938119')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'range': 'bytes=469060-938119', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
-(Pypdl)  19-07-24 16:08:00 - DEBUG: GET Response: 206
-GET Response headers: <CIMultiDictProxy('Date': 'Fri, 19 Jul 2024 06:08:00 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '57023', 'Connection': 'keep-alive', 'Last-Modified': 'Fri, 19 Jul 2024 05:00:30 GMT', 'Etag': '"6699f2ee-80703"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '138', 'Content-Range': 'bytes 469060-526082/526083', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=PXD0ZpvW%2FejG1UAJTYa3J3fTM44ieu4Hk3NvRU19EQxdE40Zr11I0PaP%2FKwpbx6YzqJCfXoMX8T8jDPXa8cTL02LRndgNvq%2BxbesLpIIOOT9gAgDDfmlDdjU4h%2FOrTle"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a5888d6081c8643-PER', 'alt-svc': 'h3=":443"; ma=86400')>
-(Pypdl)  19-07-24 16:08:00 - ERROR: Failed to obtain headers from https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg.
-NoneType: None
-(Pypdl)  19-07-24 16:08:00 - ERROR: (AttributeError) ['NoneType' object has no attribute 'get']
-(Pypdl)  19-07-24 16:08:00 - DEBUG: Download failed, url: https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Reseted download manager
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Downloading, url: https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg attempt: 1
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Obtaining header from https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Ending HEAD request for https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0')>
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
+(Pypdl)  20-07-24 18:36:22 - DEBUG: HEAD Response: 200
+HEAD Response headers: <CIMultiDictProxy('Date': 'Sat, 20 Jul 2024 08:36:23 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '938120', 'Connection': 'keep-alive', 'Last-Modified': 'Thu, 18 Jul 2024 22:00:45 GMT', 'Etag': '"6699908d-e5088"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '95486', 'Accept-Ranges': 'bytes', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2BAuGTe2hXwEpUxDAk7XTD%2F%2FWk75idHo%2B%2F%2FI8VqWQiyHRvUspd7Ml9iZDLw9mYB0g6uTRzGZ8Ceuy4F0hIfpF6zosYiFexEaC6Q1s%2FFwg%2BQTuxNjaPLjh%2FlXKXytL7aep"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a619f8bd8d0863d-PER', 'alt-svc': 'h3=":443"; ma=86400')>
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Header accquired from head request
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Size accquired from header
+(Pypdl)  20-07-24 18:36:22 - DEBUG: ETag accquired from header
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Segment table created: {'url': 'https://safebooru.org//images/4619/3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg', 'segments': 2, 'overwrite': True, 0: {'start': 0, 'end': 469059, 'segment_size': 469060, 'segment_path': '3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg.0'}, 1: {'start': 469060, 'end': 938119, 'segment_size': 469060, 'segment_path': '3eb0ebb8b3a93515fa070f6be303527c48ffeed1.jpg.1'}}
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Initiated waiting loop
+(Pypdl)  20-07-24 18:36:22 - DEBUG: Multi-Segment download started
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Downloaded all segments
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Combining files
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Exit waiting loop, download completed
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Reseted download manager
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Downloading, url: https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg attempt: 1
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Obtaining header from https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Ending HEAD request for https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0')>
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
+(Pypdl)  20-07-24 18:36:23 - DEBUG: HEAD Response: 200
+HEAD Response headers: <CIMultiDictProxy('Date': 'Sat, 20 Jul 2024 08:36:23 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '526083', 'Connection': 'keep-alive', 'Last-Modified': 'Fri, 19 Jul 2024 05:00:30 GMT', 'Etag': '"6699f2ee-80703"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '95441', 'Accept-Ranges': 'bytes', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=1XPfcj%2B7etcDCFrI%2FPqLCffrh%2BgBXRIOJIZMiC15QbmZgJkHfTyhXNYlm7u3G4VbAHQEQ3fYY762M0mhsJKw6qOXL2KyfYDzPxv0oPU3jMWacx60LUOKRsuyvzz5%2Btds"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a619f900d2e8676-PER', 'alt-svc': 'h3=":443"; ma=86400')>
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Header accquired from head request
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Size accquired from header
+(Pypdl)  20-07-24 18:36:23 - DEBUG: ETag accquired from header
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Segment table created: {'url': 'https://safebooru.org//images/4619/55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg', 'segments': 2, 'overwrite': True, 0: {'start': 0, 'end': 263040, 'segment_size': 263041, 'segment_path': '55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg.0'}, 1: {'start': 263041, 'end': 526082, 'segment_size': 263042, 'segment_path': '55cdaa511197791cc818d0e9388e9f93afdd4c0d.jpg.1'}}
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Initiated waiting loop
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Multi-Segment download started
+(Pypdl)  20-07-24 18:36:23 - DEBUG: Downloaded all segments
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Combining files
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Exit waiting loop, download completed
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Reseted download manager
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Downloading, url: https://safebooru.org//samples/4619/sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg attempt: 1
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Obtaining header from https://safebooru.org//samples/4619/sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Ending HEAD request for https://safebooru.org//samples/4619/sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0')>
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
+(Pypdl)  20-07-24 18:36:24 - DEBUG: HEAD Response: 200
+HEAD Response headers: <CIMultiDictProxy('Date': 'Sat, 20 Jul 2024 08:36:24 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '538445', 'Connection': 'keep-alive', 'Last-Modified': 'Fri, 19 Jul 2024 05:00:25 GMT', 'Etag': '"6699f2e9-8374d"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '95416', 'Accept-Ranges': 'bytes', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ki7QcQNdX6Illdovn10NkBOkG2yLZsADjes2OAmPW840PwQi2jtBVdCVP5MN2DIIsv9S92nw3SxO764fJYlb3MD%2Fe7fEZNi7RZmatup3LoeV9XKTm9dJ5NHVmd6RK4qH"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a619f94cbee2d56-PER', 'alt-svc': 'h3=":443"; ma=86400')>
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Header accquired from head request
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Size accquired from header
+(Pypdl)  20-07-24 18:36:24 - DEBUG: ETag accquired from header
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Segment table created: {'url': 'https://safebooru.org//samples/4619/sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg', 'segments': 2, 'overwrite': True, 0: {'start': 0, 'end': 269221, 'segment_size': 269222, 'segment_path': 'sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg.0'}, 1: {'start': 269222, 'end': 538444, 'segment_size': 269223, 'segment_path': 'sample_93ed3885001db1f53ed3ccf4c2612886e1b53803.jpg.1'}}
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Initiated waiting loop
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Multi-Segment download started
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Downloaded all segments
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Combining files
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Exit waiting loop, download completed
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Reseted download manager
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Downloading, url: https://safebooru.org//samples/4619/sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg attempt: 1
+(Pypdl)  20-07-24 18:36:24 - DEBUG: Obtaining header from https://safebooru.org//samples/4619/sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Ending HEAD request for https://safebooru.org//samples/4619/sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg. I sent: <CIMultiDict('User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0')>
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Sent headers: <CIMultiDictProxy('Host': 'safebooru.org', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate')>
+(Pypdl)  20-07-24 18:36:25 - DEBUG: HEAD Response: 200
+HEAD Response headers: <CIMultiDictProxy('Date': 'Sat, 20 Jul 2024 08:36:25 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '459403', 'Connection': 'keep-alive', 'Last-Modified': 'Fri, 19 Jul 2024 01:00:41 GMT', 'Etag': '"6699bab9-7028b"', 'Expires': 'Thu, 31 Dec 2037 23:55:55 GMT', 'Cache-Control': 'max-age=315360000', 'CF-Cache-Status': 'HIT', 'Age': '95360', 'Accept-Ranges': 'bytes', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ABPmr7lsLFmiVS574Y6zSwW4xG0o0Af34DOYYgtAmt%2BT%2Fsg4mDY%2Fpe7t%2BaW9GM1Of2OslWI%2Frk6vxUdyY%2BUr%2FGLL233eg0yvS2%2FkAMYDcHdB%2FImszVDfJbBT6Ens4vFn"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '8a619f995d638aca-PER', 'alt-svc': 'h3=":443"; ma=86400')>
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Header accquired from head request
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Size accquired from header
+(Pypdl)  20-07-24 18:36:25 - DEBUG: ETag accquired from header
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Segment table created: {'url': 'https://safebooru.org//samples/4619/sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg', 'segments': 2, 'overwrite': True, 0: {'start': 0, 'end': 229700, 'segment_size': 229701, 'segment_path': 'sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg.0'}, 1: {'start': 229701, 'end': 459402, 'segment_size': 229702, 'segment_path': 'sample_3cde1a70e1edb5f365d8166db39262196d6c45ba.jpg.1'}}
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Initiated waiting loop
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Multi-Segment download started
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Downloaded all segments
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Combining files
+(Pypdl)  20-07-24 18:36:25 - DEBUG: Exit waiting loop, download completed

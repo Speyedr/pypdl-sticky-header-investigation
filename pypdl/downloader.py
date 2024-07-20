@@ -65,6 +65,9 @@ class Multidown(Basicdown):
             kwargs.setdefault("headers", {}).update({"range": f"bytes={start}-{end}"})  # this is probably causing issues?
             await self.download(url, segment_path, "ab", session, **kwargs)
 
+        if (headers := kwargs.get("headers", None)) is not None:
+            headers.pop("range", None)  # prevent sticky range header
+
         if self.curr == size:
             self.completed = True
         else:
