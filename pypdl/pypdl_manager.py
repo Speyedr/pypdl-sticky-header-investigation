@@ -2,6 +2,7 @@ import asyncio
 import time
 from collections import deque
 from concurrent.futures import Future, ThreadPoolExecutor
+from copy import deepcopy
 from logging import Logger
 from pathlib import Path
 from threading import Event
@@ -280,7 +281,7 @@ class Pypdl:
                 self._workers.append(md)
                 tasks.append(
                     asyncio.create_task(
-                        md.worker(segment_table, segment, session, **self._kwargs)  # self._kwargs is accessed in this function
+                        md.worker(segment_table, segment, session, **deepcopy(self._kwargs))  # self._kwargs is accessed in this function
                     )
                 )
             try:
