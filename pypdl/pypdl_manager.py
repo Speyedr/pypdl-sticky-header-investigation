@@ -2,6 +2,7 @@ import asyncio
 import time
 from collections import deque
 from concurrent.futures import Future, ThreadPoolExecutor
+from copy import deepcopy
 from logging import Logger
 from pathlib import Path
 from threading import Event
@@ -46,6 +47,7 @@ class Pypdl:
             "raise_for_status": True,
         }
         self._kwargs.update(kwargs)         # this is where the "User-Agent" attribute is saved
+        self._orig_kwargs = deepcopy(self._kwargs)
         self._allow_reuse = allow_reuse
 
         self.size = None
@@ -154,6 +156,7 @@ class Pypdl:
         self._workers.clear()
         self._interrupt.clear()
         self._stop = False
+        self._kwargs = deepcopy(self._orig_kwargs)
 
         self.size = None
         self.progress = 0
