@@ -1,3 +1,5 @@
+## This fork was used to [investigate](https://github.com/mjishnu/pypdl/issues/23) and then [develop a fix](https://github.com/mjishnu/pypdl/pull/24) for a bug in Pypdl 1.4.2. It has been archived as it has served its purpose. This fork is not intended for production.
+
 # pypdl
 
 pypdl is a Python library for downloading files from the internet. It provides features such as multi-segmented downloads, retry download in case of failure, option to continue downloading using a different URL if necessary, progress tracking, pause/resume functionality, checksum and many more.
