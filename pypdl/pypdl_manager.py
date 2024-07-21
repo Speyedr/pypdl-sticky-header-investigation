@@ -45,7 +45,7 @@ class Pypdl:
             "timeout": aiohttp.ClientTimeout(sock_read=60),
             "raise_for_status": True,
         }
-        self._kwargs.update(kwargs)         # this is where the "User-Agent" attribute is saved
+        self._kwargs.update(kwargs)
         self._allow_reuse = allow_reuse
 
         self.size = None
@@ -119,7 +119,7 @@ class Pypdl:
                     time.sleep(3)
 
                 except Exception as e:
-                    self.logger.error("(%s) [%s]", e.__class__.__name__, e)
+                    self.logger.exception("(%s) [%s]", e.__class__.__name__, e)
 
             self.wait = False
             self.failed = True
@@ -143,12 +143,12 @@ class Pypdl:
         self._interrupt.set()
         self._stop = True
         time.sleep(1)
-        self.logger.debug("Download stoped")    # logger typo here
+        self.logger.debug("Download stopped")
 
     def shutdown(self) -> None:
         """Shutdown the download manager."""
         self._pool.shutdown()
-        self.logger.debug("Shutdown download manger")   # logger typo (manger -> manager)
+        self.logger.debug("Shutdown download manager")
 
     def _reset(self):
         self._workers.clear()
@@ -165,7 +165,7 @@ class Pypdl:
         self.failed = False
         self.completed = False
         self.wait = True
-        self.logger.debug("Reseted download manager")   # another logger typo here
+        self.logger.debug("Reset download manager")
 
     def _execute(
         self, url, file_path, segments, display, multisegment, etag, overwrite
@@ -229,13 +229,13 @@ class Pypdl:
         header = asyncio.run(self._get_header(url))
         file_path = get_filepath(url, header, file_path)
         if size := int(header.get("content-length", 0)):
-            self.logger.debug("Size accquired from header")
+            self.logger.debug("Size acquired from header")
             self.size = size
 
         etag = header.get("etag", not etag)  # since we check truthiness of etag
 
         if isinstance(etag, str):
-            self.logger.debug("ETag accquired from header")
+            self.logger.debug("ETag acquired from header")
             etag = etag.strip('"')
 
         if not self.size or not header.get("accept-ranges"):
@@ -244,32 +244,17 @@ class Pypdl:
 
         return file_path, multisegment, etag
 
-    async def _get_header(self, url):   # self._kwargs is accessed in this function
-        async def on_request_end(session, trace_config_ctx, params):
-            self.logger.debug("Ending %s request for %s. I sent: %s" % (params.method, params.url, params.headers))
-            self.logger.debug('Sent headers: %s' % params.response.request_info.headers)
-
-        trace_config = aiohttp.TraceConfig()
-        trace_config.on_request_end.append(on_request_end)
-
-        self.logger.debug(f"Obtaining header from {url}")
-        async with aiohttp.ClientSession(trace_configs=[trace_config]) as session:
+    async def _get_header(self, url):
+        async with aiohttp.ClientSession() as session:
             async with session.head(url, **self._kwargs) as response:
-                self.logger.debug(f"HEAD Response: {response.status}\n"
-                                  f"HEAD Response headers: {response.headers}")
                 if response.status == 200:
-                    self.logger.debug("Header accquired from head request")
+                    self.logger.debug("Header acquired from head request")
                     return response.headers
 
             async with session.get(url, **self._kwargs) as response:
-                self.logger.debug(f"GET Response: {response.status}\n"
-                                  f"GET Response headers: {response.headers}")
                 if response.status == 200:
-                    self.logger.debug("Header accquired from get request")
+                    self.logger.debug("Header acquired from get request")
                     return response.headers
-
-            # no exception handling here? will fall through if server is misbehaving
-            self.logger.exception(f"Failed to obtain headers from {url}.")
 
     async def _multi_segment(self, segments, segment_table):
         tasks = []
@@ -280,14 +265,14 @@ class Pypdl:
                 self._workers.append(md)
                 tasks.append(
                     asyncio.create_task(
-                        md.worker(segment_table, segment, session, **self._kwargs)  # self._kwargs is accessed in this function
+                        md.worker(segment_table, segment, session, **self._kwargs)
                     )
                 )
             try:
                 await asyncio.gather(*tasks)
                 self.logger.debug("Downloaded all segments")
             except Exception as e:
-                self.logger.error("(%s) [%s]", e.__class__.__name__, e)
+                self.logger.exception("(%s) [%s]", e.__class__.__name__, e)
                 self._interrupt.set()
 
     async def _single_segment(self, url, file_path):
@@ -296,10 +281,10 @@ class Pypdl:
             sd = Singledown(self._interrupt)
             self._workers.append(sd)
             try:
-                await sd.worker(url, file_path, session, **self._kwargs)    # self._kwargs is accessed in this function
-                self.logger.debug("Downloaded single segement")
+                await sd.worker(url, file_path, session, **self._kwargs)
+                self.logger.debug("Downloaded single segment")
             except Exception as e:
-                self.logger.error("(%s) [%s]", e.__class__.__name__, e)
+                self.logger.exception("(%s) [%s]", e.__class__.__name__, e)
                 self._interrupt.set()
 
     def _calc_values(self, recent_queue, interval):
